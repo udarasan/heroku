@@ -31,7 +31,7 @@ public class UserController {
     }
     @GetMapping(path = "/all",produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity getAll() {
-        return new ResponseEntity(new StandardResponse("200", "Done", "HEYY"), HttpStatus.OK);
+        return new ResponseEntity(new StandardResponse("200", "Done", "Udara Wadda"), HttpStatus.OK);
     }
 
 
