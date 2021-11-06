@@ -29,7 +29,7 @@ public class UserController {
         ArrayList<UserDTO> allUsers = userService.getAllUsers();
         return new ResponseEntity(new StandardResponse("200", "Done", allUsers), HttpStatus.OK);
     }
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(path = "/all",produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity getAll() {
         return new ResponseEntity(new StandardResponse("200", "Done", "HEY"), HttpStatus.OK);
     }
