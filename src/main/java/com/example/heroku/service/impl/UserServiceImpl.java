@@ -25,9 +25,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void registerUser(UserDTO dto) {
-        if (userRepo.existsById(dto.getId())){
-            throw new ValidateException("This User Already Have An Account!");
-        }
 
         userRepo.save(mapper.map(dto, User.class));
     }
